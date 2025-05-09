@@ -1,0 +1,67 @@
+import React, { useEffect, useRef } from 'react';
+
+const About: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    
+    const elements = container.querySelectorAll('.animate-on-scroll');
+    elements.forEach(el => observer.observe(el));
+    
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section id="about" className="py-20 bg-white dark:bg-gray-900" ref={containerRef}>
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl mx-auto mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 animate-on-scroll opacity-0 translate-y-8">
+            Sobre <span className="text-indigo-600 dark:text-indigo-400">Mim</span>
+          </h2>
+          <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6 animate-on-scroll opacity-0 translate-y-8 animation-delay-200"></div>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative animate-on-scroll opacity-0 translate-x-(-8)">
+            <div className="aspect-square overflow-hidden rounded-3xl shadow-2xl">
+              <img
+                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+                alt="Vinicius Yudi"
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-indigo-400/20 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -top-6 -left-6 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl -z-10"></div>
+          </div>
+          
+          <div className="animate-on-scroll opacity-0 translate-x-8">
+            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+              Olá! Sou Vinicius Yudi, um desenvolvedor Full Stack com paixão por criar soluções digitais elegantes e funcionais. Com experiência em desenvolvimento web e mobile, trabalho para transformar conceitos complexos em interfaces intuitivas e sistemas robustos.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+              Minha jornada como desenvolvedor me levou a trabalhar com diversas tecnologias e metodologias, sempre buscando a excelência técnica e a melhor experiência para o usuário final. Acredito na combinação de código limpo, design centrado no usuário e arquiteturas escaláveis.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              Quando não estou codificando, você pode me encontrar explorando novas tecnologias, contribuindo para projetos open source ou compartilhando conhecimento com a comunidade de desenvolvimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
