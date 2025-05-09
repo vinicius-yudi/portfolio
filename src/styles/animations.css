@@ -10,6 +10,20 @@
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 20s linear infinite; /* Animação automática para desktop */
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
 }
@@ -38,4 +52,16 @@
 .animate-in {
   opacity: 1 !important;
   transform: translateY(0) translateX(0) !important;
+}
+
+@media (max-width: 768px) {
+  .animate-scroll {
+    animation: none; /* Desativa a animação no mobile */
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Habilita snap para rolagem suave */
+  }
+
+  .animate-scroll > div {
+    scroll-snap-align: center; /* Alinha os itens ao centro durante a rolagem */
+  }
 }

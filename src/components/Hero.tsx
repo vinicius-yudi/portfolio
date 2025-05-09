@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 opacity-0 translate-y-8 animate-fade-in-up animation-delay-300">
-            Desenvolvedor Full Stack apaixonado por criar experiências digitais excepcionais que combinam estética e funcionalidade.
+            Desenvolvedor Full Stack apaixonado por criar experiências digitais que combinam estética e funcionalidade.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 opacity-0 translate-y-8 animate-fade-in-up animation-delay-600">

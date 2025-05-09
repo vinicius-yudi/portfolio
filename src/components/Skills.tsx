@@ -1,77 +1,68 @@
-import React, { useEffect, useRef } from 'react';
-import { Code, Server, Globe, Figma } from 'lucide-react';
+import React from 'react';
+import ReactLogo from '../assets/react.png';
+import JavaLogo from '../assets/java.png';
+import FigmaLogo from '../assets/figma.png';
+import PythonLogo from '../assets/python.png';
+import JavaScriptLogo from '../assets/javascript.png';
+import AndroidStudio from '../assets/androidStudio.png';
+import Firebase from '../assets/firebase.png';
+import Kotlin from '../assets/kotlin.png';
+import TypeScript from '../assets/typeScript.png';
+import MySql from '../assets/mysql.png';
+
+
 
 const Skills: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-    
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    
-    const elements = container.querySelectorAll('.animate-on-scroll');
-    elements.forEach(el => observer.observe(el));
-    
-    return () => observer.disconnect();
-  }, []);
+  const logos = [
+    { icon: ReactLogo, name: 'React' },
+    { icon: JavaLogo, name: 'Java' },
+    { icon: FigmaLogo, name: 'Figma' },
+    { icon: PythonLogo, name: 'Python' },
+    { icon: JavaScriptLogo, name: 'JavaScript' },
+    { icon: AndroidStudio, name: 'Android Studio' },
+    { icon: Firebase, name: 'Firebase' },
+    { icon: Kotlin, name: 'Kotlin' },
+    { icon: TypeScript, name: 'TypeScript' },
+    { icon: MySql, name: 'MySQL' },
 
-  const skills = [
-    { icon: <Code size={24} />, title: "Front-End", items: ["React", "Vue.js", "Next.js", "TypeScript", "TailwindCSS"] },
-    { icon: <Server size={24} />, title: "Back-End", items: ["Node.js", "Express", "Python", "Django", "PostgreSQL"] },
-    { icon: <Globe size={24} />, title: "DevOps", items: ["Docker", "AWS", "CI/CD", "Git", "Linux"] },
-    { icon: <Figma size={24} />, title: "Design", items: ["UI/UX", "Figma", "Responsive Design", "Accessibility"] }
+
+
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800" ref={containerRef}>
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 animate-on-scroll opacity-0 translate-y-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Minhas <span className="text-indigo-600 dark:text-indigo-400">Habilidades</span>
           </h2>
-          <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6 animate-on-scroll opacity-0 translate-y-8 animation-delay-200"></div>
-          <p className="text-lg text-gray-700 dark:text-gray-300 animate-on-scroll opacity-0 translate-y-8 animation-delay-400">
+          <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
             Tecnologias e ferramentas que utilizo para criar soluções excepcionais
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {skills.map((skill, index) => (
-            <div 
-              key={skill.title}
-              className={`
-                bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700
-                hover:shadow-xl hover:border-indigo-200 dark:hover:border-indigo-800 transition-all duration-300
-                animate-on-scroll opacity-0 translate-y-8 transform hover:-translate-y-2
-              `}
-              style={{ animationDelay: `${index * 100 + 400}ms` }}
-            >
-              <div className="text-indigo-600 dark:text-indigo-400 mb-4">
-                {skill.icon}
+
+        {/* Carrossel */}
+        <div className="overflow-hidden relative">
+          <div className="flex animate-scroll gap-8">
+            {logos.map((logo, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 flex items-center justify-center w-32 h-32 bg-white dark:bg-gray-900 rounded-full shadow-lg border border-gray-100 dark:border-gray-700"
+              >
+                <img src={logo.icon} alt={logo.name} className="w-16 h-16" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                {skill.title}
-              </h3>
-              <ul className="text-gray-700 dark:text-gray-300 space-y-2">
-                {skill.items.map((item) => (
-                  <li key={item} className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-indigo-600 dark:bg-indigo-400 rounded-full mr-2"></span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            ))}
+            {/* Duplicação para efeito contínuo */}
+            {logos.map((logo, index) => (
+              <div
+                key={`duplicate-${index}`}
+                className="flex-shrink-0 flex items-center justify-center w-32 h-32 bg-white dark:bg-gray-900 rounded-full shadow-lg border border-gray-100 dark:border-gray-700"
+              >
+                <img src={logo.icon} alt={logo.name} className="w-16 h-16" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ import './styles/animations.css';
 
 function App() {
   useEffect(() => {
-    document.title = 'Vinicius Yudi | Desenvolvedor Full Stack';
+    document.title = 'Vinicius Yudi';
     
     const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
     if (link) {
@@ -18,15 +18,15 @@ function App() {
     }
     
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', (e) => {
         e.preventDefault();
-        
-        const href = this.getAttribute('href');
+
+        const href = anchor.getAttribute('href');
         if (!href) return;
-        
+
         const targetElement = document.querySelector(href);
         if (!targetElement) return;
-        
+
         targetElement.scrollIntoView({
           behavior: 'smooth',
           block: 'start'

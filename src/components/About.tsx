@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import FotoPerfil from '../assets/fotoPerfil.jpg';
 
 const About: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,26 +37,26 @@ const About: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative animate-on-scroll opacity-0 translate-x-(-8)">
-            <div className="aspect-square overflow-hidden rounded-3xl shadow-2xl">
+            <div className="overflow-hidden rounded-full shadow-2xl w-80 h-100 mx-auto">
               <img
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+                src={FotoPerfil}
                 alt="Vinicius Yudi"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-indigo-400/20 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute -top-6 -left-6 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -bottom-6 -right-6 w-72 h-72 bg-indigo-400/20 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -top-6 -left-6 w-72 h-72 bg-indigo-600/10 rounded-full blur-3xl -z-10"></div>
           </div>
           
           <div className="animate-on-scroll opacity-0 translate-x-8">
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              Olá! Sou Vinicius Yudi, um desenvolvedor Full Stack com paixão por criar soluções digitais elegantes e funcionais. Com experiência em desenvolvimento web e mobile, trabalho para transformar conceitos complexos em interfaces intuitivas e sistemas robustos.
+              Olá! Sou Vinicius Yudi, tenho 20 anos e sou estudante de Sistemas de Informações na PUCPR, atualmente estou no 5° período.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              Minha jornada como desenvolvedor me levou a trabalhar com diversas tecnologias e metodologias, sempre buscando a excelência técnica e a melhor experiência para o usuário final. Acredito na combinação de código limpo, design centrado no usuário e arquiteturas escaláveis.
+              Minha jornada como estudante e desenvolvedor me levou a explorar, estudar e trabalhar com diversas tecnologias e metodologias, sempre buscando a excelência técnica e a melhor experiência para o usuário final.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Quando não estou codificando, você pode me encontrar explorando novas tecnologias, contribuindo para projetos open source ou compartilhando conhecimento com a comunidade de desenvolvimento.
+              Quando não estou codificando, você pode me encontrar explorando novas tecnologias, principalmente IAs. No meu tempo livre, pratico diversos hobbies, como jogar no computador, ouvir música, jogar futebol, sair com os amigos, ir em encontros de carros e o que eu mais gosto é praticar pesca esportiva.
             </p>
           </div>
         </div>
