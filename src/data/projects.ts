@@ -1,12 +1,14 @@
 import { Project } from '../types';
-import TempoDeOuro from '../assets/tempoDeOuro.png';
+import SaldusImage from '../assets/Saldus.png';
+import TempoDeOuro from '../assets/tempoDeOuro1.png';
+
 
 export const projects: Project[] = [
   {
     id: 1,
     title: "Tempo de Ouro",
     description: "Tempo de Ouro é um site voluntariado sobre nossos idosos que estão em algum asilo e consciste em que voluntários façam visitas à esses amigos e amigas da terceira idade..",
-    image: "https://firebasestorage.googleapis.com/v0/b/tempodeouro-c51c8.appspot.com/o/assets%2Fbanner.png?alt=media&token=768031ab-31ab-4579-a1d2-8d17b4c84e0e",
+    image: TempoDeOuro,
     technologies: ["React", "TypeScript", "Firebase", "Vercel"],
     repoUrl: "https://github.com/vinicius-yudi/TempoDeOuro",
     demoUrl: "https://tempo-de-ouro.vercel.app/"
@@ -15,7 +17,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Saldus",
     description: "Saldus é plataforma web para registrar, gerenciar, classificar e visualizar relatórios dos gastos do mês de uma pessoa.",
-    image: "https://drive.google.com/file/d/1EsV74RBNMYqrctPULDL99fgdRQkN565B/view?usp=sharing",
+    image: SaldusImage,
     technologies: ["React", "JavaScript", "Tailwind CSS", "TypeScript"],
     repoUrl: "https://github.com/vinicius-yudi/Saldus",
     demoUrl: "https://saldus.netlify.app/"
