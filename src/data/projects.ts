@@ -1,23 +1,24 @@
 import { Project } from '../types';
+import TempoDeOuro from '../assets/tempoDeOuro.png';
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-    image: "https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-    repoUrl: "https://github.com/viniciusyudi/ecommerce",
-    demoUrl: "https://ecommerce-demo.viniciusyudi.com"
+    title: "Tempo de Ouro",
+    description: "Tempo de Ouro é um site voluntariado sobre nossos idosos que estão em algum asilo e consciste em que voluntários façam visitas à esses amigos e amigas da terceira idade..",
+    image: "https://firebasestorage.googleapis.com/v0/b/tempodeouro-c51c8.appspot.com/o/assets%2Fbanner.png?alt=media&token=768031ab-31ab-4579-a1d2-8d17b4c84e0e",
+    technologies: ["React", "TypeScript", "Firebase", "Vercel"],
+    repoUrl: "https://github.com/vinicius-yudi/TempoDeOuro",
+    demoUrl: "https://tempo-de-ouro.vercel.app/"
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, task assignment, and progress tracking.",
-    image: "https://images.pexels.com/photos/6804604/pexels-photo-6804604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
-    repoUrl: "https://github.com/viniciusyudi/task-manager",
-    demoUrl: "https://tasks.viniciusyudi.com"
+    title: "Saldus",
+    description: "Saldus é plataforma web para registrar, gerenciar, classificar e visualizar relatórios dos gastos do mês de uma pessoa.",
+    image: "https://drive.google.com/file/d/1EsV74RBNMYqrctPULDL99fgdRQkN565B/view?usp=sharing",
+    technologies: ["React", "JavaScript", "Tailwind CSS", "TypeScript"],
+    repoUrl: "https://github.com/vinicius-yudi/Saldus",
+    demoUrl: "https://saldus.netlify.app/"
   },
   {
     id: 3,

@@ -89,7 +89,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               className="flex items-center gap-1 px-4 py-2 bg-indigo-600 text-white font-medium rounded-full hover:bg-indigo-700 transition-colors"
             >
               <ExternalLink size={16} />
-              <span>Demo</span>
+              <span>Projeto</span>
             </a>
           )}
         </div>
