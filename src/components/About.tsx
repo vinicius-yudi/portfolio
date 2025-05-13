@@ -51,10 +51,10 @@ const About: React.FC = () => {
           
           <div className="animate-on-scroll opacity-0 translate-x-8">
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              Olá! Sou Vinicius Yudi, tenho 20 anos e sou estudante de Sistemas de Informações na PUCPR, atualmente estou no 5° período.
+              Olá! Me chamo Vinicius Yudi, tenho 20 anos e sou estudante de Sistemas de Informações na PUCPR, atualmente estou no 5° período.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              Minha jornada como estudante e desenvolvedor me levou a explorar, estudar e trabalhar com diversas tecnologias e metodologias, sempre buscando a excelência técnica e a melhor experiência para o usuário final.
+              Minha jornada como estudante e desenvolvedor me levou a explorar, estudar e desenvolver com diversas tecnologias e metodologias, sempre buscando a excelência técnica e a melhor experiência para o usuário final.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               Quando não estou codificando, você pode me encontrar explorando novas tecnologias, principalmente IAs. No meu tempo livre, pratico diversos hobbies, como jogar no computador, ouvir música, jogar futebol, sair com os amigos, ir em encontros de carros e o que eu mais gosto é praticar pesca esportiva.
