@@ -1,6 +1,10 @@
 import { Project } from '../types';
 import SaldusImage from '../assets/Saldus.png';
 import TempoDeOuro from '../assets/tempoDeOuro1.png';
+import ArqManager from '../assets/arqmanager.png';
+import QuizApp from '../assets/quizapp.png';
+import Portfolio from '../assets/portfolio.png';
+import GiveLink from '../assets/givelink.png';
 
 
 export const projects: Project[] = [
@@ -9,8 +13,8 @@ export const projects: Project[] = [
     title: "Tempo de Ouro",
     description: "Tempo de Ouro é um site voluntariado sobre nossos idosos que estão em algum asilo e consciste em que voluntários façam visitas à esses amigos e amigas da terceira idade..",
     image: TempoDeOuro,
-    technologies: ["React", "TypeScript", "Firebase", "Vercel"],
-    repoUrl: "https://github.com/vinicius-yudi/TempoDeOuro",
+    technologies: ["React", "TypeScript", "Firebase", "Vercel", "CSS"],
+    repoUrl: ["https://github.com/vinicius-yudi/TempoDeOuro"],
     demoUrl: "https://tempo-de-ouro.vercel.app/"
   },
   {
@@ -19,41 +23,43 @@ export const projects: Project[] = [
     description: "Saldus é plataforma web para registrar, gerenciar, classificar e visualizar relatórios dos gastos do mês de uma pessoa.",
     image: SaldusImage,
     technologies: ["React", "JavaScript", "Tailwind CSS", "TypeScript"],
-    repoUrl: "https://github.com/vinicius-yudi/Saldus",
+    repoUrl: ["https://github.com/vinicius-yudi/Saldus"],
     demoUrl: "https://saldus.netlify.app/"
   },
   {
     id: 3,
-    title: "Health Tracking Dashboard",
-    description: "A comprehensive health metrics dashboard that visualizes user activity, nutrition, and wellness data.",
-    image: "https://images.pexels.com/photos/9574342/pexels-photo-9574342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    technologies: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-    repoUrl: "https://github.com/viniciusyudi/health-tracker",
+    title: "ArqManager",
+    description: "ArqManager é uma aplicação web moderna desenvolvida para simplificar e otimizar a gestão de projetos de construção civil.",
+    image: ArqManager,
+    technologies: ["React", "Tailwind CSS","TypeScript", "IA"],
+    repoUrl: ["https://github.com/vinicius-yudi/arqManager"],
+    demoUrl: "https://arqmanager.netlify.app/"
   },
   {
     id: 4,
-    title: "Real Estate Listing Platform",
-    description: "A property listing application with advanced filtering, virtual tours, and appointment scheduling.",
-    image: "https://images.pexels.com/photos/7578986/pexels-photo-7578986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    technologies: ["React Native", "GraphQL", "Apollo", "MongoDB"],
-    repoUrl: "https://github.com/viniciusyudi/real-estate",
-    demoUrl: "https://realestate.viniciusyudi.com"
+    title: "QuizApp",
+    description: "QuizApp é um aplicativo de perguntas e respostas desenvolvido para Android, utilizando Kotlin e Jetpack Compose.",
+    image: QuizApp,
+    technologies: ["Kotlin", "Jetpack Compose", "Android Studio","SQlite"],
+    repoUrl: ["https://github.com/vinicius-yudi/aplicativo-quiz"],
+    demoUrl: "https://www.youtube.com/shorts/PXC9drgs9sA"
   },
   {
     id: 5,
-    title: "AI Content Generator",
-    description: "An AI-powered application that generates custom content for marketing, blogs, and social media.",
-    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    technologies: ["Python", "TensorFlow", "React", "FastAPI"],
-    repoUrl: "https://github.com/viniciusyudi/ai-content-generator",
+    title: "Meu Portfolio",
+    description: "Meu portfolio como um projeto para demonstrar minhas habilidades, conhecimentos e projetos acadêmicos e pessoais.",
+    image: Portfolio,
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    demoUrl: "https://viniciusyudi.com",
+    repoUrl: ["https://github.com/vinicius-yudi/portfolio"],
   },
   {
     id: 6,
-    title: "Finance Tracker",
-    description: "A personal finance application with expense tracking, budget planning, and financial insights.",
-    image: "https://images.pexels.com/photos/7567444/pexels-photo-7567444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    technologies: ["Next.js", "Prisma", "PostgreSQL", "Recharts"],
-    repoUrl: "https://github.com/viniciusyudi/finance-tracker",
-    demoUrl: "https://finance.viniciusyudi.com"
+    title: "GiveLink",
+    description: "A GiveLink é uma plataforma que intermedia e conecta doadores a instituições como hospitais, ONGs, etc.",
+    image: GiveLink,
+    technologies: ["React", "Python FastAPI", "Tailwind CSS", "TypeScript", "PostgreSQL"],
+    demoUrl: "",
+    repoUrl: ["https://github.com/vinicius-yudi/givelink-front", "https://github.com/gdserafini/givelink-server"],
   }
 ];

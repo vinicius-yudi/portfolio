@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import FotoPerfil from '../assets/fotoPerfil.jpg';
+import CurriculoPDF from '../assets/viniciusYudi.pdf'; // Certifique-se de adicionar o arquivo PDF na pasta assets
 
 const About: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -58,6 +59,16 @@ const About: React.FC = () => {
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               Quando não estou codificando, você pode me encontrar explorando novas tecnologias, principalmente IAs. No meu tempo livre, pratico diversos hobbies, como jogar no computador, ouvir música, jogar futebol, sair com os amigos, ir em encontros de carros e o que eu mais gosto é praticar pesca esportiva.
             </p>
+            {/* Botão de Currículo */}
+            <a
+              href={CurriculoPDF}
+              download="Vinicius_Yudi_Curriculo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg shadow-lg hover:bg-indigo-700 transition-colors"
+            >
+              Baixar Currículo
+            </a>
           </div>
         </div>
       </div>
