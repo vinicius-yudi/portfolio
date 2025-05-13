@@ -2,9 +2,9 @@ import { Project } from '../types';
 import SaldusImage from '../assets/Saldus.png';
 import TempoDeOuro from '../assets/tempoDeOuro1.png';
 import ArqManager from '../assets/arqManager.png';
-import QuizApp from '../assets/quizapp.png';
+import QuizApp from '../assets/quizApp.png';
 import Portfolio from '../assets/portfolio.png';
-import GiveLink from '../assets/givelink.png';
+import GiveLink from '../assets/giveLink.png';
 
 
 export const projects: Project[] = [
