@@ -38,11 +38,12 @@ const Projects: React.FC = () => {
             Uma seleção dos meus trabalhos mais recentes e relevantes
           </p>
         </div>
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
+        </div>
+        <div className="flex justify-center mt-12">
         </div>
       </div>
     </section>

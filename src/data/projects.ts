@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: "Saldus",
     description: "Saldus é plataforma web para registrar, gerenciar, classificar e visualizar relatórios dos gastos do mês de uma pessoa.",
     image: SaldusImage,
-    technologies: ["React", "JavaScript", "Tailwind CSS", "TypeScript"],
+    technologies: ["React", "IA", "Tailwind CSS", "TypeScript"],
     repoUrl: ["https://github.com/vinicius-yudi/Saldus"],
     demoUrl: "https://saldus.netlify.app/"
   },
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: "ArqManager",
     description: "ArqManager é uma aplicação web moderna desenvolvida para simplificar e otimizar a gestão de projetos de construção civil.",
     image: ArqManager,
-    technologies: ["React", "Tailwind CSS","TypeScript", "IA"],
+    technologies: ["React", "Tailwind CSS","TypeScript"],
     repoUrl: ["https://github.com/vinicius-yudi/arqManager"],
     demoUrl: "https://arqmanager.netlify.app/"
   },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     title: "Meu Portfolio",
     description: "Meu portfolio como um projeto para demonstrar minhas habilidades, conhecimentos e projetos acadêmicos e pessoais.",
     image: Portfolio,
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Vercel"],
     demoUrl: "https://viniciusyudi.com",
     repoUrl: ["https://github.com/vinicius-yudi/portfolio"],
   },
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     title: "GiveLink",
     description: "A GiveLink é uma plataforma que intermedia e conecta doadores a instituições como hospitais, ONGs, etc.",
     image: GiveLink,
-    technologies: ["React", "Python FastAPI", "Tailwind CSS", "TypeScript", "PostgreSQL"],
+    technologies: ["React", "Python", "FastAPI", "TypeScript", "PostgreSQL"],
     demoUrl: "",
     repoUrl: ["https://github.com/vinicius-yudi/givelink-front", "https://github.com/gdserafini/givelink-server"],
   }
