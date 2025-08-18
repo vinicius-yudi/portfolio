@@ -5,6 +5,8 @@ import ArqManager from '../assets/arqManager.png';
 import QuizApp from '../assets/quizApp.png';
 import Portfolio from '../assets/portfolio.png';
 import GiveLink from '../assets/giveLink.png';
+import Nearby from '../assets/nearby.png';
+import agentsNLW from '../assets/agentsNLW.png';
 
 
 export const projects: Project[] = [
@@ -58,8 +60,27 @@ export const projects: Project[] = [
     title: "GiveLink",
     description: "A GiveLink é uma plataforma que intermedia e conecta doadores a instituições como hospitais, ONGs, etc.",
     image: GiveLink,
-    technologies: ["React", "Python", "FastAPI", "TypeScript", "PostgreSQL"],
+    technologies: ["React", "Python", "FastAPI", "TypeScript", "PostgreSQL", "Docker"],
     demoUrl: "",
     repoUrl: ["https://github.com/vinicius-yudi/givelink-front", "https://github.com/gdserafini/givelink-server"],
+  },
+  {
+    id: 7,
+    title: "Nearby App",
+    description: "O Nearby é um aplicativo Android que permite aos usuários encontrar estabelecimentos próximos e obter cupons de desconto através da leitura de códigos QR.",
+    image: Nearby,
+    technologies: ["Kotlin", "Jetpack Compose", "API GoogleMaps", "Android Studio"],
+    figmaUrl: "https://www.figma.com/design/JHNwT9DxCcJDBG15njavU1/NLW-Pocket-Mobile-%E2%80%A2-Nearby--Community-?node-id=3-376&p=f&t=e539idga0sGfwiWU-0",
+    demoUrl: "",
+    repoUrl: ["https://github.com/vinicius-yudi/Nearby"],
+  },
+  {
+    id: 8,
+    title: "NLW Agents",
+    description: "Projeto desenvolvido durante um evento da Rocketseat utilizando tecnologias modernas para criação de uma API robusta e eficiente.",
+    image: agentsNLW,
+    technologies: ["Node", "React", "TypeScript", "Fastify", "PostgreSQL", "Docker"],
+    repoUrl: ["https://github.com/vinicius-yudi/nlw-agents-server", "https://github.com/vinicius-yudi/nlw-agents-web"]
   }
+
 ];

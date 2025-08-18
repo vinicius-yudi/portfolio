@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactLogo from '../assets/react.png';
-import JavaLogo from '../assets/java.png';
 import FigmaLogo from '../assets/figma.png';
 import PythonLogo from '../assets/python.png';
-import JavaScriptLogo from '../assets/javascript.png';
 import AndroidStudio from '../assets/androidStudio.png';
 import Firebase from '../assets/firebase.png';
 import Kotlin from '../assets/kotlin.png';
@@ -15,10 +13,8 @@ import MySql from '../assets/mysql.png';
 const Skills: React.FC = () => {
   const logos = [
     { icon: ReactLogo, name: 'React' },
-    { icon: JavaLogo, name: 'Java' },
     { icon: FigmaLogo, name: 'Figma' },
     { icon: PythonLogo, name: 'Python' },
-    { icon: JavaScriptLogo, name: 'JavaScript' },
     { icon: AndroidStudio, name: 'Android Studio' },
     { icon: Firebase, name: 'Firebase' },
     { icon: Kotlin, name: 'Kotlin' },

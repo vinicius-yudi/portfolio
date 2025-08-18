@@ -6,6 +6,7 @@ export interface Project {
   technologies: string[];
   repoUrl: string[];
   demoUrl?: string;
+  figmaUrl?: string;
 }
 
 export interface SocialLink {

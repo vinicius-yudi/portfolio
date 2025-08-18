@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
+import figmaIcon from '../assets/figma.png';
 import { Project } from '../types';
 
 interface ProjectCardProps {
@@ -83,7 +84,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               className="flex items-center gap-1 px-4 py-2 bg-white text-gray-900 font-medium rounded-full hover:bg-gray-100 transition-colors"
             >
               <Github size={16} />
-              <span>Repositório {index + 1}</span>
+              <span>Repositório {}</span>
             </a>
           ))}
 
@@ -97,6 +98,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             >
               <ExternalLink size={16} />
               <span>Projeto</span>
+            </a>
+          )}
+
+          {/* Figma Link */}
+          {project.figmaUrl && (
+            <a
+              href={project.figmaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 px-4 py-2 bg-pink-500 text-white font-medium rounded-full hover:bg-pink-600 transition-colors"
+            >
+              <img src={figmaIcon} alt="Figma" className="w-5 h-5" />
+              <span>Figma</span>
             </a>
           )}
         </div>
