@@ -7,6 +7,7 @@ import Firebase from '../assets/firebase.png';
 import Kotlin from '../assets/kotlin.png';
 import TypeScript from '../assets/typeScript.png';
 import MySql from '../assets/mysql.png';
+import NodeJS from '../assets/nodejs.png';
 
 
 
@@ -20,9 +21,7 @@ const Skills: React.FC = () => {
     { icon: Kotlin, name: 'Kotlin' },
     { icon: TypeScript, name: 'TypeScript' },
     { icon: MySql, name: 'MySQL' },
-
-
-
+    { icon: NodeJS, name: 'Node.js' }
   ];
 
   return (
