@@ -34,9 +34,6 @@ const Projects: React.FC = () => {
             Meus <span className="text-indigo-600 dark:text-indigo-400">Projetos</span>
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6 animate-on-scroll opacity-0 translate-y-8 animation-delay-200"></div>
-          <p className="text-lg text-gray-700 dark:text-gray-300 animate-on-scroll opacity-0 translate-y-8 animation-delay-400">
-            Uma seleção dos meus trabalhos mais recentes e relevantes
-          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

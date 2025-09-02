@@ -8,6 +8,7 @@ import Kotlin from '../assets/kotlin.png';
 import TypeScript from '../assets/typeScript.png';
 import MySql from '../assets/mysql.png';
 import NodeJS from '../assets/nodeJS.png';
+import Flutter from '../assets/flutterLogo.png';
 
 
 
@@ -21,7 +22,8 @@ const Skills: React.FC = () => {
     { icon: Kotlin, name: 'Kotlin' },
     { icon: TypeScript, name: 'TypeScript' },
     { icon: MySql, name: 'MySQL' },
-    { icon: NodeJS, name: 'NodeJS' }
+    { icon: NodeJS, name: 'NodeJS' },
+    { icon: Flutter, name: 'Flutter' }
   ];
 
   return (
@@ -33,7 +35,7 @@ const Skills: React.FC = () => {
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Tecnologias e ferramentas que utilizo para criar soluções excepcionais
+            Tecnologias e ferramentas que possuo experiência e que utilizo em meus projetos.
           </p>
         </div>
 

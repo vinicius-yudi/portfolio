@@ -7,6 +7,7 @@ import Portfolio from '../assets/portfolio.png';
 import GiveLink from '../assets/giveLink.png';
 import Nearby from '../assets/nearby.png';
 import agentsNLW from '../assets/agentsNLW.png';
+import Pokedex from '../assets/pokedex.png';
 
 
 export const projects: Project[] = [
@@ -81,6 +82,14 @@ export const projects: Project[] = [
     image: agentsNLW,
     technologies: ["Node", "React", "TypeScript", "Fastify", "PostgreSQL", "Docker"],
     repoUrl: ["https://github.com/vinicius-yudi/nlw-agents-server", "https://github.com/vinicius-yudi/nlw-agents-web"]
+  },
+  {
+    id: 9,
+    title: "Pokedex",
+    description: "Um aplicativo de Pokédex completo e multiplataforma desenvolvido com Flutter. Explore, pesquise e gerencie seus Pokémon favoritos com uma interface bonita e responsiva.",
+    image: Pokedex,
+  technologies: ["Flutter", "Dart", "PokeAPI"],
+    repoUrl: ["https://github.com/vinicius-yudi/pokedex-flutter"],
+    demoUrl: "https://my-project.vercel.app/"
   }
-
 ];
