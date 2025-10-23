@@ -88,8 +88,8 @@ export const projects: Project[] = [
     title: "Pokedex",
     description: "Um aplicativo de Pokédex completo e multiplataforma desenvolvido com Flutter. Explore, pesquise e gerencie seus Pokémon favoritos com uma interface bonita e responsiva.",
     image: Pokedex,
-  technologies: ["Flutter", "Dart", "PokeAPI"],
-    repoUrl: ["https://github.com/vinicius-yudi/pokedex-flutter"],
+  technologies: ["Flutter", "React Native", "Dart", "PokeAPI"],
+    repoUrl: ["https://github.com/vinicius-yudi/pokedex-flutter", "https://github.com/vinicius-yudi/pokedex-react-native"],
     demoUrl: "https://my-project.vercel.app/"
   }
 ];
